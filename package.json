@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Template project for modern vanilla ES modules apps with sane linting settings.",
   "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dag0310/app.git"
@@ -18,8 +22,10 @@
   },
   "homepage": "https://github.com/dag0310/app#readme",
   "devDependencies": {
+    "chai": "^4.3.8",
     "eslint": "^8.48.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.28.1"
+    "eslint-plugin-import": "^2.28.1",
+    "mocha": "^10.2.0"
   }
 }

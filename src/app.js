@@ -2,18 +2,20 @@ class App {
   static staticProperty = 'static';
 
   constructor({ id, onChange = null }) {
-    this.id = id;
+    this.setId(id);
+    this.#setOnChange(onChange);
+  }
+
+  #setOnChange(onChange) {
     this.onChange = onChange;
-
-    this.#privateMethod();
   }
 
-  #privateMethod() {
-    this.id = '1';
+  setId(id) {
+    this.id = id;
   }
 
-  publicMethod() {
-    this.id = '2';
+  getId() {
+    return this.id;
   }
 }
 
