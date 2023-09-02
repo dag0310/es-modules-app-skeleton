@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>App</title>
+<meta name="description" content="App description.">
+<meta name="author" content="Firstname Lastname">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+<meta name="robots" content="index,follow">
+<meta property="og:image" content="https://example.com/favicon.png">
+<meta name="apple-mobile-web-app-title" content="App">
+<meta name="application-name" content="App">
+<link rel="apple-touch-icon" sizes="16x16" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>App</h1>
+
+<div id="app"></div>
+
+<script type="module">
+  import App from './app.js';
+  const app = new App({
+    id: 'app',
+    onChange: (result) => { console.log(result); },
+  });
+</script>
+</body>
+</html>
